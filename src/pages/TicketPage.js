@@ -5,12 +5,15 @@ import CategoriesContext from '../context'
 
 const TicketPage = ({ editMode }) => {
 
+  
+
   const [formData, setFormData] = useState({
     status: 'not started',
     progress: 0,
     timestamp: new Date().toISOString(),
   })
   const { categories, setCategories } = useContext(CategoriesContext)
+  
 
   const navigate = useNavigate()
   let { id } = useParams()
@@ -63,6 +66,7 @@ const TicketPage = ({ editMode }) => {
   console.log('EDITcategories', categories)
   console.log('formData', formData.status)
   console.log('formData.status', formData.status === 'stuck')
+  console.log(editMode);
   return (
     <div className="ticket">
       <h1>{editMode ? 'Update Your Ticket' : 'Create a Ticket'}</h1>

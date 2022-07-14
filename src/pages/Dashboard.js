@@ -5,47 +5,11 @@ import CategoriesContext from "../context";
 
 const Dashboard = () => {
 
-    // const tickets = [
-    //     {
-    //         category: 'Q1 2022',
-    //         color: 'red',
-    //         title: 'NFT Videos',
-    //         owner: 'Shane Abraham',
-    //         avatar: 'https://greatdubai.com/sell-car-rentals/wp-content/uploads/sites/4/2022/05/SONATA-hero-option1-764A5360-edit-640x354-1.jpg',
-    //         status: 'done',
-    //         priority: 5,
-    //         progress: 40,
-    //         description: 'Detailed video for NFT',
-    //         timestamp: '2022-07-11T10:17:49+00:00'
-    //     },
-    //     {
-    //         category: 'Q1 2022',
-    //         title: 'NFT Videos',
-    //         owner: 'Shane Abraham',
-    //         avatar: 'https://greatdubai.com/sell-car-rentals/wp-content/uploads/sites/4/2022/05/SONATA-hero-option1-764A5360-edit-640x354-1.jpg',
-    //         status: 'done',
-    //         priority: 2,
-    //         progress: 80,
-    //         description: 'Detailed video for NFT1',
-    //         timestamp: '2022-08-11T10:17:49+00:00'
-    //     },
-    //     {
-    //         category: 'Q2 2022',
-    //         color: 'blue',
-    //         title: 'NFT Videos',
-    //         owner: 'Shane Abraham',
-    //         avatar: '',
-    //         status: 'done',
-    //         priority: 3,
-    //         progress: 20,
-    //         description: 'Detailed video for watch',
-    //         timestamp: '2022-08-11T10:17:49+00:00'
-    //     }
-    // ];
+   
 
     const [tickets, setTickets] = useState(null);
     
-    const {categories , setCategories} = useContext(CategoriesContext)
+    const { categories, setCategories } = useContext(CategoriesContext)
 
     useEffect(async () => {
         const response = await axios.get('http://localhost:8000/tickets');
@@ -64,10 +28,12 @@ const Dashboard = () => {
         
     }, [])
 
-    useEffect( async () => {
-        console.log(tickets)
-        setCategories([...new Set(tickets?.map(({ category }) => category))])
-      }, [tickets])
+   console.log();
+   
+    useEffect(async() => {
+      setCategories([...new Set(tickets?.map(({ category }) => category ))])
+      
+    }, [tickets])
 
     const colors = [
         'rgb(255,179,186)',
@@ -81,6 +47,8 @@ const Dashboard = () => {
     const uniqueCategories = [
         ...new Set(tickets?.map(({category})=> category))
     ]
+
+    
 
 
     console.log(uniqueCategories);

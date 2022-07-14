@@ -12,7 +12,7 @@ const StatusDisplay = ({status}) => {
                 color = 'rgb(255,179,186)';
                 break;
             default:
-                color = 'rgb()186,225,255)';
+                color = 'rgb(186,225,255)';
         }
         return color;
     }
