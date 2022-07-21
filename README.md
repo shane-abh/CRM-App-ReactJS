@@ -72,7 +72,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Application Functionalities:
+#Application Functionalities:
 1. Add Tickets.
 2. Update Tickets.
 3. Delete Tickets.
@@ -87,5 +87,6 @@ Application Functionalities:
 ![image](https://user-images.githubusercontent.com/65544944/180192047-7926c88f-d1d7-4caa-ac38-4e0122d916fd.png)
 
 3. Update ticket page
+![image](https://user-images.githubusercontent.com/65544944/180192355-2fc2b0c3-7437-480c-b395-a6c38c0462f2.png)
 
 
