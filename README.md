@@ -72,3 +72,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+Application Functionalities:
+1. Add Tasks.
+2. Update Tasks.
+3. Delete Tasks.
+5. View task progression.
+6. Separate tasks into different categories.
+
+
