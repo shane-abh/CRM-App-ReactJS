@@ -72,14 +72,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-#Application Functionalities:
+## Application Functionalities:
 1. Add Tickets.
 2. Update Tickets.
 3. Delete Tickets.
 5. View task progression.
 6. Separate Tickets into different categories.
 
-#ScreenShots:
+## ScreenShots:
 1. Dashboard page
 ![image](https://user-images.githubusercontent.com/65544944/180191640-fb98d3ba-9980-494f-8b25-47a0e3e34786.png)
 
